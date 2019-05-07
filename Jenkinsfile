@@ -59,7 +59,7 @@ pipeline {
             steps {
                 /* sh "docker run -d --rm -p 8090:8090 \
                     --name calculator localhost:5000/juht/calculator" */
-		sh "dockr-compose up -d"
+		sh "docker-compose up -d"
             }
         }
         stage ("Acceptance Test"){
