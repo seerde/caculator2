@@ -1,7 +1,7 @@
 version: "3"
 services:
     calculator:
-        image: localhost:5000/seerde/calculator:latest
+        build: .
         ports:
             - "8090"
     redis:
